@@ -126,6 +126,44 @@ html{
     width: 90vw;
     max-width: 1170px;
     margin: 0 auto;
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));   
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+}
+.product-container{
+    position: relative;
+    overflow: hidden;
+}
+.product-img{
+    display: block;
+    width: 100%;
+    min-height: 12rem;
+    transition: var(--mainTransition);
+}
+.bag-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: var(--menu-bg-color);
+    text-transform: uppercase;
+    padding: .5rem .75rem;
+    border: none;
+    letter-spacing: var(--mainSpacing);
+    color: white;
+    transition: var(--mainTransition);
+    cursor: pointer;
+    font-weight: bold;
+    transform: translateX(100%);
+}
+.bag-btn:hover{
+    color: black;
+}
+.bxs-cart{
+    font-size: 1rem;
+    margin-right: .5rem;
+}
+.product-container:hover .bag-btn{
+    transform: translateX(0);
 }
 
