@@ -3,7 +3,7 @@
 :root{
     --menu-bg-color: #CC103C;
     --white: #FFFFFF;
-    --white-2: #F5F5F5;
+    --white-2: #e9e0e0;
     --black: #000000;
     --black-2: #1A1A1A;
     --orange: #FC3F05;
@@ -19,7 +19,7 @@
 
 body{
     color: var(--black);
-    background-color: var(--white-2);
+    background-color: var(--white);
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -28,3 +28,104 @@ html{
 }
 
 /* --------------Navbar-------------- */
+
+.navbar{
+    position: sticky;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    top: 0;
+    align-items: center;
+    background: var(--white-2);
+    z-index: 1;
+}
+.navbar-center{
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-icon{
+    font-size: 2rem;
+}
+.shop-icon{
+    height: 200px;
+    width: auto;
+    position: relative;
+    top: 20px;
+}
+.cart-btn{
+    position: relative;
+    cursor: pointer;
+    top: 2px;
+}
+.cart-items{
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background-color: black;
+    padding: 0 5px;
+    border-radius: 30%;
+    color: white;
+}
+
+/* hero section */
+.hero{
+    min-height: calc(100vh - 100px);
+    background: url(./image/hero-bcg.jpeg) center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner{
+    text-align: center;
+    background: rgba(255, 255, 255, .5);
+    display: inline-block;
+    padding: 2rem;
+}
+.banner-title{
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 3rem;
+}
+.banner-btn{
+    font-size: 2rem;
+    padding: .5rem 2.2rem;
+    letter-spacing: var(--mainSpacing);
+    border: 1px solid var(--menu-bg-color);
+    cursor: pointer;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, .1);
+    transition: var(--mainTransition);
+    border-radius: 0px;
+}
+.banner-btn:hover{
+    background: var(--menu-bg-color);
+    color: white;
+    border-radius: 5px;
+}
+
+/* end of hero section */
+
+/* product section */
+.products{
+    padding: 4rem 0;
+}
+.section-title h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    letter-spacing: var(--mainSpacing);
+}
+.products-center{
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    
+}
+
